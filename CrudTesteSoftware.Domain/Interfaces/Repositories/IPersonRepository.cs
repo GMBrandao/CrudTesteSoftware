@@ -1,4 +1,5 @@
-﻿using CrudTesteSoftware.Domain.Models;
+﻿using CrudTesteSoftware.Domain.DTO;
+using CrudTesteSoftware.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace CrudTesteSoftware.Domain.Interfaces.Repositories
 {
     public interface IPersonRepository
     {
-        Task<IEnumerable<Person>> GetPersonAsync();
-        Task<Person> GetByIdPersonAsync(int idRequest);
-        //Task<int> CreatePersonAsync(CreatePersonCommand data);
-        //Task<int> PutPersonAsync(UpdatePersonCommand data);
-        //Task<Unit> DeletePersonAsync(int idRequest);
+        public IEnumerable<PersonResponseDTO> GetPeople();
+        Task<PersonResponseDTO> GetByIdPersonAsync(int idRequest);
+        Task CreatePersonAsync(CreatePersonRequestDTO data);
+        Task PutPersonAsync(CreatePersonRequestDTO data, int idRequest);
+        Task DeletePersonAsync(int idRequest);
     }
 }

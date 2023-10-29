@@ -1,6 +1,7 @@
 ﻿using CrudTesteSoftware.Domain.Interfaces.Repositories;
 using CrudTesteSoftware.Domain.Interfaces.Services;
 using CrudTesteSoftware.Domain.Services.Address;
+using CrudTesteSoftware.Domain.Services.Person;
 using CrudTesteSoftware.Infrastructure.Data.Mysql.Repositories;
 
 namespace CrudTesteSoftware.Api
@@ -36,7 +37,9 @@ namespace CrudTesteSoftware.Api
             services.AddControllers();
 
             services.AddTransient<IAddressRepository, AddressRepository>();
+            services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddSingleton<IAddressService, AddressService>();
+            services.AddSingleton<IPersonService, PersonService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

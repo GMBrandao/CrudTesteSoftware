@@ -1,20 +1,15 @@
-﻿namespace CrudTesteSoftware.Domain.Models
+﻿namespace CrudTesteSoftware.Domain.DTO
 {
-    public class Person
+    public class CreatePersonRequestDTO
     {
-        public Person(int i, string c, string n, char g, string p, Address a)
+        public CreatePersonRequestDTO(string c, string n, char g, string p, int i)
         {
-            this.Id = i;
             this.Cpf = c;
             this.Name = n;
             this.Gender = g;
             this.Phone = p;
-            this.Address = a;
+            this.IdAddress = i;
         }
-
-        public Person() {}
-
-        public int Id { get; set; }
 
         public string Cpf { get; set; }
 
@@ -24,6 +19,6 @@
 
         public string Phone { get; set; }
 
-        public Address Address { get; set; }
+        public int IdAddress { get; set; }
     }
 }
