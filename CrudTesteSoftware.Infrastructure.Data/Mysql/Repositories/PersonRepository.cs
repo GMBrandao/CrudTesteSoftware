@@ -3,7 +3,6 @@ using CrudTesteSoftware.Domain.Interfaces.Repositories;
 using CrudTesteSoftware.Infrastructure.Data.Mysql.Connection;
 using Dapper;
 using MySql.Data.MySqlClient;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace CrudTesteSoftware.Infrastructure.Data.Mysql.Repositories
 {
