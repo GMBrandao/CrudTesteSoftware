@@ -7,6 +7,7 @@ using CrudTesteSoftware.Domain.Interfaces.Repositories;
 using CrudTesteSoftware.Domain.Interfaces.Services;
 using CrudTesteSoftware.Domain.Services.Address;
 using CrudTesteSoftware.Api.Controllers;
+using CrudTesteSoftware.Domain.Services.Cep;
 
 namespace CrudTesteSoftware.Test
 {
@@ -208,9 +209,11 @@ namespace CrudTesteSoftware.Test
         }
 
         [Fact]
-        public void GetAddress()
+        public async void GetAddress()
         {
+            var addressDTO = await PostOfficeService.GetAddressAsync("00000000");
 
+            Assert.NotNull(addressDTO.ZipCode);
         }
     }
 }
