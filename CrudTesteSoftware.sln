@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTesteSoftware.Api", "CrudTesteSoftware\CrudTesteSoftware.Api.csproj", "{7FFDE1D8-76E9-46C8-B17D-2C7454FE8253}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudTesteSoftware.Api", "CrudTesteSoftware\CrudTesteSoftware.Api.csproj", "{7FFDE1D8-76E9-46C8-B17D-2C7454FE8253}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{AC3C9D94-8CCC-4C92-9A88-3057F4A63577}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Domain", "2-Domain", "{75D02311-22F4-4392-BAD0-1DC46972A0A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTesteSoftware.Domain", "CrudTesteSoftware.Domain\CrudTesteSoftware.Domain.csproj", "{54C774F9-45F8-4250-95A6-BA8BDC4F9BCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudTesteSoftware.Domain", "CrudTesteSoftware.Domain\CrudTesteSoftware.Domain.csproj", "{54C774F9-45F8-4250-95A6-BA8BDC4F9BCB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Infrastructure", "3-Infrastructure", "{3E06CBC9-DA60-4C5D-AA5F-F11676198B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTesteSoftware.Infrastructure.Data", "CrudTesteSoftware.Infrastructure.Data\CrudTesteSoftware.Infrastructure.Data.csproj", "{69BBCA97-AA99-4630-98CA-3C47A55420D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrudTesteSoftware.Infrastructure.Data", "CrudTesteSoftware.Infrastructure.Data\CrudTesteSoftware.Infrastructure.Data.csproj", "{69BBCA97-AA99-4630-98CA-3C47A55420D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Tests", "4-Tests", "{92C6C00E-3C26-468F-A45C-AAE0D50EE0C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTesteSoftware.Test", "CrudTesteSoftware.Test\CrudTesteSoftware.Test.csproj", "{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{69BBCA97-AA99-4630-98CA-3C47A55420D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69BBCA97-AA99-4630-98CA-3C47A55420D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69BBCA97-AA99-4630-98CA-3C47A55420D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{7FFDE1D8-76E9-46C8-B17D-2C7454FE8253} = {AC3C9D94-8CCC-4C92-9A88-3057F4A63577}
 		{54C774F9-45F8-4250-95A6-BA8BDC4F9BCB} = {75D02311-22F4-4392-BAD0-1DC46972A0A5}
 		{69BBCA97-AA99-4630-98CA-3C47A55420D5} = {3E06CBC9-DA60-4C5D-AA5F-F11676198B4E}
+		{EAE5E2FD-6AFC-4B3F-82B0-6880DE5A8523} = {92C6C00E-3C26-468F-A45C-AAE0D50EE0C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63973C67-4656-4CCD-A6CC-A38441072A33}

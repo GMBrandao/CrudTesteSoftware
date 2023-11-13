@@ -2,6 +2,10 @@
 {
     public class CreatePersonRequestDTO
     {
+        public CreatePersonRequestDTO()
+        {     
+        }
+
         public CreatePersonRequestDTO(string c, string n, char g, string p, int i)
         {
             this.Cpf = c;

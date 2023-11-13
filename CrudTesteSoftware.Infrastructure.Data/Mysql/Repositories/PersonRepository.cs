@@ -1,11 +1,9 @@
 ﻿using CrudTesteSoftware.Domain.DTO;
 using CrudTesteSoftware.Domain.Interfaces.Repositories;
-using CrudTesteSoftware.Domain.Models;
 using CrudTesteSoftware.Infrastructure.Data.Mysql.Connection;
 using Dapper;
 using MySql.Data.MySqlClient;
-using System.Reflection;
-using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CrudTesteSoftware.Infrastructure.Data.Mysql.Repositories
 {
@@ -15,6 +13,11 @@ namespace CrudTesteSoftware.Infrastructure.Data.Mysql.Repositories
         public PersonRepository()
         {
             _conn = new MySqlConnection(ConnectionClass.ConnString);
+        }
+
+        public PersonRepository(string teste)
+        {
+            _conn = new MySqlConnection("Server = localhost; Database = Teste; Uid = root; Pwd = root;");
         }
 
         public IEnumerable<PersonResponseDTO> GetPeople()

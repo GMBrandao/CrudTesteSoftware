@@ -15,4 +15,8 @@
     <ProjectReference Include="..\CrudTesteSoftware.Infrastructure.Data\CrudTesteSoftware.Infrastructure.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

@@ -8,6 +8,17 @@ namespace CrudTesteSoftware.Domain.Models
         {
         }
 
+        public Address(int n, string c, string z, string s, string nh, string ct, string st)
+        {
+            this.Number = n;
+            this.Complement = c;
+            this.ZipCode = z;
+            this.Street = s;
+            this.Neighborhood = nh;
+            this.City = ct;
+            this.State = st;
+        }
+
         public Address(AddressDTO addressDTO, AddressDTORequest addressDTORequest)
         {
             this.Number = addressDTORequest.Number;

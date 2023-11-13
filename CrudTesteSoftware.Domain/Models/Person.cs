@@ -1,4 +1,5 @@
-﻿namespace CrudTesteSoftware.Domain.Models
+﻿using System.Collections.Generic;
+namespace CrudTesteSoftware.Domain.Models
 {
     public class Person
     {
